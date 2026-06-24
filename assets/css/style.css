@@ -212,6 +212,36 @@ body{font-size:15.75px}
 .localized-button.lang-en{display:none}
 html[data-lang="fr"] .localized-button.lang-fr,
 html[data-lang="en"] .localized-button.lang-en{display:inline-flex!important}
+.hub-grid .hub-card{
+  --hub-accent:#405f7d;
+  --hub-line:rgba(64,95,125,.34);
+  --hub-tint:rgba(64,95,125,.055);
+  --hub-chip-bg:rgba(64,95,125,.07);
+}
+.hub-grid .hub-card:nth-child(2){
+  --hub-accent:#4f6f65;
+  --hub-line:rgba(79,111,101,.34);
+  --hub-tint:rgba(79,111,101,.055);
+  --hub-chip-bg:rgba(79,111,101,.07);
+}
+.hub-grid .hub-card:nth-child(3){
+  --hub-accent:#8a6d3f;
+  --hub-line:rgba(138,109,63,.34);
+  --hub-tint:rgba(138,109,63,.06);
+  --hub-chip-bg:rgba(138,109,63,.075);
+}
+.hub-grid .hub-card:nth-child(4){
+  --hub-accent:#675f7d;
+  --hub-line:rgba(103,95,125,.34);
+  --hub-tint:rgba(103,95,125,.055);
+  --hub-chip-bg:rgba(103,95,125,.07);
+}
+.hub-grid .hub-card::before{background:linear-gradient(135deg,var(--hub-tint),rgba(255,255,255,.72))}
+.hub-grid .hub-card::after{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--hub-line);z-index:1}
+.hub-grid .hub-card:hover{border-color:var(--hub-line)}
+.hub-grid .hub-kicker,
+.hub-grid .hub-card:hover .hub-arrow{color:var(--hub-accent)}
+.hub-grid .hub-chip{background:var(--hub-chip-bg);border-color:rgba(17,24,39,.08)}
 @media(max-width:700px){
   .page{padding:2rem 0 3.8rem}
   .work-card,.work-card.small,.project-card,.project-card.small,.project-card.feature{min-height:286px;border-radius:8px}
