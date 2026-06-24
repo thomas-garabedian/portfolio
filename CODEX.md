@@ -36,8 +36,8 @@ contact.html                Contact page
 resume.html                 Legacy profile/resume page kept for compatibility
 projects/                   Detailed project pages
 experiences/                Detailed experience pages
-assets/css/style.css        Main stylesheet, including day/night theme
-assets/js/main.js           Navigation, language switcher, image zoom, day/night toggle
+assets/css/style.css        Main stylesheet
+assets/js/main.js           Navigation, language switcher, image zoom
 docs/                       CV and resume PDFs
 assets/img/                 Logos, photos, project visuals
 ```
@@ -47,7 +47,7 @@ assets/img/                 Logos, photos, project visuals
 - Keep the site static: HTML, CSS, JS only.
 - Use relative paths. Do not add external CDNs unless explicitly requested.
 - Preserve bilingual content: French and English blocks use `lang-fr` and `lang-en` classes.
-- Preserve the day/night theme toggle. Theme behavior is in `assets/js/main.js` and CSS variables in `assets/css/style.css`.
+- The site uses one light visual theme only; do not reintroduce a theme toggle unless explicitly requested.
 - Keep all PDF links in `docs/` working.
 - Keep image zoom behavior by using `data-zoomable="true"` on project visuals.
 - When adding a page, update the navigation consistently across pages.

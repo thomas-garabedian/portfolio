@@ -158,96 +158,59 @@ html[data-lang="fr"] .award-badge.lang-fr, html[data-lang="en"] .award-badge.lan
 .logo-evidence img{object-fit:contain!important;background:#fff;height:220px!important;padding:1.1rem}
 @media(max-width:800px){.cieds-partner-strip{grid-template-columns:1fr;gap:1rem}.cieds-partner-strip .logo-cieds-large{height:126px!important}.cieds-partner-strip .logo-brand-aid,.cieds-partner-strip .logo-brand-ensta{height:88px!important}}
 
-
-/* Theme switcher combined v43 */
-.theme-switcher{display:flex;border:1px solid var(--line);border-radius:9px;overflow:hidden;background:var(--paper)}
-.theme-switch{border:0;background:transparent;padding:.38rem .5rem;font-weight:800;font-size:.82rem;color:var(--muted);cursor:pointer;line-height:1}
-.theme-switch.active{background:var(--ink);color:var(--paper)}
-.theme-switch:focus-visible{outline:2px solid var(--navy);outline-offset:2px}
-
-html[data-theme="night"]{
-  color-scheme:dark;
-  --bg:#0b0f16;
-  --paper:#121722;
-  --ink:#eef3fb;
-  --muted:#a6b2c3;
-  --light:#7d889a;
-  --line:#273244;
-  --line2:#344257;
-  --navy:#9ec5ff;
-  --steel:#182131;
+/* Recruiter-oriented visual polish */
+:root{
+  --bg:#f7f8fa;
+  --paper:#ffffff;
+  --ink:#111827;
+  --muted:#596575;
+  --light:#7d8796;
+  --line:#dde4ec;
+  --line2:#cbd5e1;
+  --navy:#12304f;
 }
-html[data-theme="night"] body{background:linear-gradient(180deg,#0b0f16 0%,#101724 100%);color:var(--ink)}
-html[data-theme="night"] a:hover{color:var(--navy)}
-html[data-theme="night"] .site-header{background:rgba(11,15,22,.9);border-bottom-color:var(--line);box-shadow:0 10px 28px rgba(0,0,0,.18)}
-html[data-theme="night"] .brand-mark,
-html[data-theme="night"] .lang-switcher,
-html[data-theme="night"] .theme-switcher,
-html[data-theme="night"] .nav-toggle{background:#121722;border-color:var(--line2);color:var(--ink)}
-html[data-theme="night"] .nav-links a{color:var(--muted)}
-html[data-theme="night"] .nav-links a[aria-current="page"],
-html[data-theme="night"] .nav-links a:hover{background:#171e2b;color:var(--ink)}
-html[data-theme="night"] .lang-switch.active,
-html[data-theme="night"] .theme-switch.active{background:#e8eef8;color:#0b0f16}
-html[data-theme="night"] .card,
-html[data-theme="night"] .profile-meta,
-html[data-theme="night"] .next-profile,
-html[data-theme="night"] .career-focus,
-html[data-theme="night"] .hub-card,
-html[data-theme="night"] .profile-doc-link,
-html[data-theme="night"] .contact-card{background:rgba(18,23,34,.94);border-color:var(--line);color:var(--ink)}
-html[data-theme="night"] .next-profile strong,
-html[data-theme="night"] .profile-copy .lead,
-html[data-theme="night"] .page-title,
-html[data-theme="night"] .section-title,
-html[data-theme="night"] .profile-hub-hero h1,
-html[data-theme="night"] .hub-card h2,
-html[data-theme="night"] .sub-head h1,
-html[data-theme="night"] .sub-main h2{color:var(--ink)}
-html[data-theme="night"] .button{background:#e8eef8;border-color:#e8eef8;color:#0b0f16}
-html[data-theme="night"] .button:hover{background:#fff;border-color:#fff;color:#0b0f16}
-html[data-theme="night"] .button.secondary{background:#121722;color:var(--ink);border-color:var(--line2)}
-html[data-theme="night"] .doc-icon,
-html[data-theme="night"] .tag,
-html[data-theme="night"] .career-fact,
-html[data-theme="night"] .hub-chip,
-html[data-theme="night"] .sub-tag{background:#171f2d;border-color:#2b384d;color:var(--muted)}
-html[data-theme="night"] .tag.strong{background:#18263a;border-color:#334966;color:#cfe3ff}
-html[data-theme="night"] .profile-hub-page,
-html[data-theme="night"] .profile-subpage{background:linear-gradient(180deg,#0b0f16 0%,#101724 100%)}
-html[data-theme="night"] .profile-hub-hero,
-html[data-theme="night"] .sub-head,
-html[data-theme="night"] .profile-docs-strip,
-html[data-theme="night"] .detail-block,
-html[data-theme="night"] .sub-row,
-html[data-theme="night"] .footer{border-color:var(--line)}
-html[data-theme="night"] .hub-card::before{background:linear-gradient(135deg,rgba(20,28,42,.92),rgba(13,18,28,.45));opacity:1}
-html[data-theme="night"] .hub-card:hover,
-html[data-theme="night"] .profile-doc-link:hover,
-html[data-theme="night"] .experience-line:hover,
-html[data-theme="night"] .project-line:hover{border-color:#3b4a62;box-shadow:0 18px 48px rgba(0,0,0,.28);color:var(--ink)}
-html[data-theme="night"] .fact-panel{background:rgba(18,23,34,.96);border-color:var(--line)}
-html[data-theme="night"] .evidence{background:#0f1520;border-color:var(--line)}
-html[data-theme="night"] .evidence figcaption{background:#0f1520;color:var(--muted)}
-html[data-theme="night"] .evidence img{background:#fff}
-html[data-theme="night"] .partner-logos{background:#fff;border-color:#dde5ef;color:#0b0f16}
-html[data-theme="night"] .work-card{border-color:#29354a;background:#111827}
-html[data-theme="night"] .work-card:hover{box-shadow:0 22px 60px rgba(0,0,0,.38);border-color:#51627a}
-html[data-theme="night"] .work-card.logo-card .media{background:linear-gradient(145deg,#f7fafc 0%,#e8eef5 100%)}
-html[data-theme="night"] .work-card .media{background:#0f172a}
-html[data-theme="night"] .work-card::after{background:linear-gradient(180deg,rgba(5,9,15,.04) 0%,rgba(5,9,15,.22) 42%,rgba(5,9,15,.92) 100%)}
-html[data-theme="night"] .work-logos img{background:rgba(255,255,255,.95)}
-html[data-theme="night"] .logo-evidence img,
-html[data-theme="night"] .readable-visuals .evidence img,
-html[data-theme="night"] .d4gen-readable .evidence img{background:#fff}
-html[data-theme="night"] .readable-visuals .evidence,
-html[data-theme="night"] .d4gen-readable .evidence{background:#fff;border-color:#dfe7f0;color:#10253f}
-html[data-theme="night"] .readable-visuals .evidence figcaption,
-html[data-theme="night"] .d4gen-readable .evidence figcaption{background:#fff;color:#334155}
-html[data-theme="night"] .nav-links.open{background:#121722;border-color:var(--line);box-shadow:0 18px 48px rgba(0,0,0,.35)}
-html[data-theme="night"] .image-lightbox{background:rgba(2,6,12,.94)}
-html[data-theme="night"] .image-lightbox button{border-color:rgba(255,255,255,.28);background:rgba(255,255,255,.08);color:#fff}
-html[data-theme="night"] .cieds-partner-strip{border-color:var(--line)}
-html[data-theme="night"] .sub-logo.sub-photo img{border-color:var(--line)}
-html[data-theme="night"] ::selection{background:#d7e8ff;color:#07101c}
-@media(max-width:700px){.theme-switcher{order:2}.lang-switcher{order:1}.nav-toggle{order:3}}
+body{font-size:15.75px}
+.site-header{background:rgba(247,248,250,.96)}
+.nav-wrap{height:62px}
+.nav-right{gap:.6rem}
+.nav-links a{border-radius:7px}
+.brand-mark{border-radius:8px;font-weight:820}
+.lang-switcher,.nav-toggle,.button{border-radius:8px}
+.card,.career-focus,.doc-card,.profile-doc-link,.hub-card,.contact-card,.fact-panel,.evidence,.partner-logos,.education-row,.experience-line,.project-line{border-radius:8px}
+.profile-meta{border-radius:0 8px 8px 0}
+.page{padding:2.65rem 0 4.6rem}
+.page-title,.profile-hub-hero h1,.sub-head h1{letter-spacing:-.055em}
+.career-focus{border-color:#d4dee9;background:#fff;box-shadow:0 10px 28px rgba(18,48,79,.04)}
+.career-focus h2{font-size:1.27rem}
+.career-actions .button{min-width:118px;padding:.54rem .78rem}
+.career-actions .button:first-child{box-shadow:0 8px 18px rgba(17,24,39,.12)}
+.career-facts{gap:.36rem}
+.career-fact,.tag,.hub-chip,.sub-tag,.work-tag,.project-tag{border-radius:7px}
+.award-badge{border-radius:7px;background:#fbf7e8;box-shadow:none}
+.type-pill,.type-mini{border-radius:7px}
+.work-card,.project-card{border-radius:8px;min-height:360px;box-shadow:0 1px 0 rgba(17,24,39,.03)}
+.work-card.small,.project-card.small{min-height:285px}
+.project-card.feature{min-height:382px}
+.work-card:hover,.project-card:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(17,35,62,.12)}
+.work-card .copy,.project-copy{padding:1.05rem 1.1rem 1.12rem}
+.work-card h3,.project-card h2{letter-spacing:-.035em}
+.work-card p,.project-card p{font-size:.93rem}
+.work-card::after,.project-card::after{background:linear-gradient(180deg,rgba(8,14,24,.02) 0%,rgba(8,14,24,.16) 46%,rgba(8,14,24,.86) 100%)}
+.work-card.logo-card::after,.project-card.logo-card::after{background:linear-gradient(180deg,rgba(8,14,24,0) 0%,rgba(8,14,24,.05) 48%,rgba(8,14,24,.76) 100%)}
+.work-logos img,.project-logos img{border-radius:6px}
+.next-profile,.back-home{border-radius:8px}
+.hub-card{min-height:164px}
+.hub-card:hover,.profile-doc-link:hover,.experience-line:hover,.project-line:hover{box-shadow:0 12px 28px rgba(20,38,64,.055)}
+.hub-card::before{background:linear-gradient(135deg,rgba(247,250,252,.92),rgba(255,255,255,.35))}
+.hub-arrow,.arrow{font-size:1.1rem}
+.profile-docs-strip{margin-bottom:1.45rem}
+.profile-doc-link small{letter-spacing:.06em}
+.sub-row{padding:1.08rem 0}
+.detail-main{padding:1.2rem}
+.image-lightbox img{border-radius:8px}
+@media(max-width:700px){
+  .page{padding:2rem 0 3.8rem}
+  .work-card,.work-card.small,.project-card,.project-card.small,.project-card.feature{min-height:286px;border-radius:8px}
+  .profile-meta{border-radius:0 0 8px 8px}
+  .career-actions .button{width:100%}
+}

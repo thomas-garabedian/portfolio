@@ -16,7 +16,6 @@ function isDirectHomeEntry() {
 const forceDefaultLanding = isDirectHomeEntry();
 if (forceDefaultLanding) {
   localStorage.setItem('site-lang', 'fr');
-  localStorage.setItem('site-theme', 'day');
 }
 
 const saved = localStorage.getItem('site-lang');
@@ -33,21 +32,6 @@ function setLang(lang){
 }
 setLang(saved || 'fr');
 document.querySelectorAll('[data-lang-button]').forEach(btn => btn.addEventListener('click', () => setLang(btn.dataset.langButton)));
-
-// Theme switcher: day / night
-const savedTheme = localStorage.getItem('site-theme') || 'day';
-function setTheme(theme){
-  const value = theme === 'night' ? 'night' : 'day';
-  html.setAttribute('data-theme', value);
-  document.querySelectorAll('[data-theme-button]').forEach(btn => {
-    const active = btn.dataset.themeButton === value;
-    btn.classList.toggle('active', active);
-    btn.setAttribute('aria-pressed', active ? 'true' : 'false');
-  });
-  localStorage.setItem('site-theme', value);
-}
-setTheme(savedTheme);
-document.querySelectorAll('[data-theme-button]').forEach(btn => btn.addEventListener('click', () => setTheme(btn.dataset.themeButton)));
 
 const nav = document.querySelector('.nav-links');
 const toggle = document.querySelector('.nav-toggle');

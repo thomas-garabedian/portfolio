@@ -1,25 +1,11 @@
 <!doctype html>
-<html lang="fr" data-lang="fr" data-theme="day">
+<html lang="fr" data-lang="fr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Thomas Garabédian · Portfolio</title>
   <meta name="description" content="Portfolio de Thomas Garabédian / Thomas Garabédian portfolio: data science, Computer Vision and software systems. Available for an internship from April 2027 and a Graduate Program from September 2027.">
-<script>
-    (function(){
-      var isDirectEntry = !document.referrer;
-      try {
-        if (document.referrer) {
-          isDirectEntry = new URL(document.referrer).origin !== window.location.origin;
-        }
-      } catch (error) {
-        isDirectEntry = true;
-      }
-      var theme = isDirectEntry ? 'day' : (localStorage.getItem('site-theme') || 'day');
-      document.documentElement.setAttribute('data-theme', theme === 'night' ? 'night' : 'day');
-    })();
-  </script>
-  <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css">
   <style>
     .home-signature{padding:1.1rem 0 .75rem}
     .signature-line{display:flex;align-items:center;justify-content:space-between;gap:1rem;border-bottom:1px solid var(--line);padding-bottom:.72rem}
@@ -30,9 +16,9 @@
     .work-intro h2{margin:0;font-size:.88rem;text-transform:uppercase;letter-spacing:.13em;color:var(--light)}
     .work-intro a{font-size:.86rem;font-weight:800;color:var(--muted)}
     .work-mosaic{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
-    .work-card{position:relative;min-height:390px;border-radius:22px;overflow:hidden;border:1px solid var(--line);background:#101923;display:flex;align-items:flex-end;color:#fff;text-decoration:none;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
-    .work-card:hover{transform:translateY(-4px);box-shadow:0 20px 55px rgba(17,35,62,.15);border-color:#b9c7d8;color:#fff}
-    .work-card.small{min-height:300px}
+    .work-card{position:relative;min-height:360px;border-radius:8px;overflow:hidden;border:1px solid var(--line);background:#101923;display:flex;align-items:flex-end;color:#fff;text-decoration:none;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+    .work-card:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(17,35,62,.12);border-color:#b9c7d8;color:#fff}
+    .work-card.small{min-height:285px}
     .work-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,14,24,.03) 0%,rgba(8,14,24,.18) 38%,rgba(8,14,24,.88) 100%);z-index:1}
     .work-card .media{position:absolute;inset:0;background:#f7fafc}
     .work-card .media img{width:100%;height:100%;object-fit:cover;transition:transform .42s ease,filter .42s ease}
@@ -48,11 +34,11 @@
     .work-tag{font-size:.72rem;font-weight:830;border:1px solid rgba(255,255,255,.23);background:rgba(255,255,255,.11);color:#fff;border-radius:999px;padding:.23rem .5rem}
     .work-logos{display:flex;align-items:center;gap:.45rem;flex-wrap:wrap;margin-top:.78rem;min-height:30px}
     .work-logos img{display:block;max-height:30px;max-width:96px;object-fit:contain;background:rgba(255,255,255,.93);border-radius:8px;padding:.18rem .34rem}
-    .next-profile{margin-top:1.15rem;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1rem;align-items:center;padding:1rem 1.1rem;border-radius:18px;background:#fff;border:1px solid var(--line)}
+    .next-profile{margin-top:1.15rem;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1rem;align-items:center;padding:1rem 1.1rem;border-radius:8px;background:#fff;border:1px solid var(--line)}
     .next-profile p{margin:0;color:var(--muted);font-size:.95rem}
     .next-profile strong{display:block;color:var(--ink);font-size:1rem;margin-bottom:.15rem}
-    @media(max-width:900px){.work-mosaic{grid-template-columns:1fr}.work-card,.work-card.small{min-height:330px}.signature-line{align-items:flex-start;flex-direction:column}.signature-meta{white-space:normal}.next-profile{grid-template-columns:1fr}}
-    @media(max-width:700px){.home-signature{padding:.85rem 0 .45rem}.work-card,.work-card.small{min-height:295px;border-radius:18px}.work-card .copy{padding:.95rem}.work-intro a{display:none}.signature-meta{font-size:.75rem}.work-card.logo-card .media{padding:2rem}}
+    @media(max-width:900px){.work-mosaic{grid-template-columns:1fr}.work-card,.work-card.small{min-height:315px}.signature-line{align-items:flex-start;flex-direction:column}.signature-meta{white-space:normal}.next-profile{grid-template-columns:1fr}}
+    @media(max-width:700px){.home-signature{padding:.85rem 0 .45rem}.work-card,.work-card.small{min-height:286px;border-radius:8px}.work-card .copy{padding:.95rem}.work-intro a{display:none}.signature-meta{font-size:.75rem}.work-card.logo-card .media{padding:2rem}}
 </style>
 </head>
 <body>
@@ -62,7 +48,7 @@
     <a class="brand" href="index.html"><span class="brand-mark">TG</span><span>Thomas Garabédian</span></a>
     <div class="nav-right">
       <nav class="nav-links" aria-label="Navigation principale / Main navigation"><a href="index.html" aria-current="page"><span class="lang-fr inline">Accueil</span><span class="lang-en inline">Home</span></a><a href="profile.html"><span class="lang-fr inline">Profil</span><span class="lang-en inline">Profile</span></a><a href="projects.html"><span class="lang-fr inline">Projets</span><span class="lang-en inline">Projects</span></a><a href="contact.html">Contact</a></nav>
-      <div class="lang-switcher"><button class="lang-switch" type="button" data-lang-button="fr">FR</button><button class="lang-switch" type="button" data-lang-button="en">EN</button></div><div class="theme-switcher" aria-label="Thème / Theme"><button class="theme-switch" type="button" data-theme-button="day" title="Mode jour / Day mode">☀︎</button><button class="theme-switch" type="button" data-theme-button="night" title="Mode nuit / Night mode">☾</button></div>
+      <div class="lang-switcher"><button class="lang-switch" type="button" data-lang-button="fr">FR</button><button class="lang-switch" type="button" data-lang-button="en">EN</button></div>
       <button class="nav-toggle" type="button" aria-expanded="false">Menu</button>
     </div>
   </div>
@@ -86,7 +72,7 @@
           <div class="career-facts"><span class="career-fact">Data science</span><span class="career-fact">Computer Vision</span><span class="career-fact">ML pipelines</span><span class="career-fact"><span class="lang-fr inline">Validation technique</span><span class="lang-en inline">Technical validation</span></span></div>
         </div>
         <div class="career-actions">
-          <a class="button" href="docs/CV_SHORT_GARABEDIAN_THOMAS_FR.pdf" target="_blank" rel="noopener"><span class="lang-fr inline">CV court</span><span class="lang-en inline">Short CV</span></a>
+          <a class="button" href="docs/CV_SHORT_GARABEDIAN_THOMAS_FR.pdf" target="_blank" rel="noopener"><span class="lang-fr inline">Télécharger le CV court</span><span class="lang-en inline">Download short CV</span></a>
           <a class="button secondary" href="contact.html">Contact</a>
         </div>
       </section>
