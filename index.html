@@ -7,7 +7,15 @@
   <meta name="description" content="Portfolio de Thomas Garabédian, étudiant ingénieur en data science, Computer Vision et systèmes logiciels. Disponible pour un stage dès avril 2027 et un Graduate Program dès septembre 2027.">
 <script>
     (function(){
-      var theme = localStorage.getItem('site-theme') || 'day';
+      var isDirectEntry = !document.referrer;
+      try {
+        if (document.referrer) {
+          isDirectEntry = new URL(document.referrer).origin !== window.location.origin;
+        }
+      } catch (error) {
+        isDirectEntry = true;
+      }
+      var theme = isDirectEntry ? 'day' : (localStorage.getItem('site-theme') || 'day');
       document.documentElement.setAttribute('data-theme', theme === 'night' ? 'night' : 'day');
     })();
   </script>

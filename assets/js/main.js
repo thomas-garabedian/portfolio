@@ -1,5 +1,24 @@
 
 const html = document.documentElement;
+function isDirectHomeEntry() {
+  const path = window.location.pathname;
+  const isHome = path.endsWith('/') || path.endsWith('/index.html');
+  if (!isHome) return false;
+  if (!document.referrer) return true;
+  try {
+    const referrer = new URL(document.referrer);
+    return referrer.origin !== window.location.origin;
+  } catch {
+    return true;
+  }
+}
+
+const forceDefaultLanding = isDirectHomeEntry();
+if (forceDefaultLanding) {
+  localStorage.setItem('site-lang', 'fr');
+  localStorage.setItem('site-theme', 'day');
+}
+
 const saved = localStorage.getItem('site-lang');
 function setLang(lang){
   const value = lang === 'en' ? 'en' : 'fr';
