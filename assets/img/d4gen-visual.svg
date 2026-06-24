@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" fill="none">
+  <rect width="960" height="600" rx="28" fill="#F7F8FA"/>
+  <rect x="48" y="52" width="864" height="496" rx="26" fill="white" stroke="#E5E8EE"/>
+  <g transform="translate(88 92)">
+    <rect width="784" height="84" rx="24" fill="#12314F"/>
+    <path d="M38 55 C56 22 82 76 104 36 C127 -6 153 77 180 43 C206 10 235 72 266 42 C297 12 324 74 356 42" stroke="white" stroke-width="5" fill="none" stroke-linecap="round" opacity=".9"/>
+    <rect x="420" y="30" width="252" height="24" rx="10" fill="white" opacity=".9"/>
+  </g>
+  <g transform="translate(88 226)">
+    <rect width="144" height="86" rx="20" fill="#F9FAFB" stroke="#E5E8EE"/>
+    <circle cx="72" cy="42" r="15" fill="#12314F"/>
+    <rect x="35" y="62" width="74" height="9" rx="5" fill="#CBD5E1"/>
+    <path d="M144 43H182" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+    <rect x="182" width="144" height="86" rx="20" fill="#F9FAFB" stroke="#E5E8EE"/>
+    <rect x="226" y="25" width="56" height="34" rx="10" fill="#315F86"/>
+    <rect x="217" y="62" width="74" height="9" rx="5" fill="#CBD5E1"/>
+    <path d="M326 43H364" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+    <rect x="364" width="144" height="86" rx="20" fill="#F9FAFB" stroke="#E5E8EE"/>
+    <circle cx="414" cy="34" r="11" fill="#12314F" opacity=".9"/>
+    <circle cx="458" cy="54" r="11" fill="#12314F" opacity=".55"/>
+    <circle cx="452" cy="27" r="11" fill="#12314F" opacity=".35"/>
+    <rect x="399" y="62" width="74" height="9" rx="5" fill="#CBD5E1"/>
+    <path d="M508 43H546" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+    <rect x="546" width="144" height="86" rx="20" fill="#F9FAFB" stroke="#E5E8EE"/>
+    <path d="M584 44L606 62L652 25" stroke="#186245" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="581" y="62" width="74" height="9" rx="5" fill="#CBD5E1"/>
+  </g>
+  <g transform="translate(88 368)">
+    <rect width="236" height="112" rx="22" fill="#EEF8F4" stroke="#A7DBC5"/>
+    <text x="28" y="64" fill="#186245" font-size="38" font-family="Arial" font-weight="700">-80%</text>
+    <rect x="28" y="78" width="136" height="12" rx="6" fill="#A7DBC5"/>
+    <rect x="274" width="236" height="112" rx="22" fill="#F9FAFB" stroke="#E5E8EE"/>
+    <text x="302" y="64" fill="#12314F" font-size="38" font-family="Arial" font-weight="700">100%</text>
+    <rect x="302" y="78" width="136" height="12" rx="6" fill="#CBD5E1"/>
+    <rect x="548" width="236" height="112" rx="22" fill="#F9FAFB" stroke="#E5E8EE"/>
+    <text x="576" y="64" fill="#12314F" font-size="38" font-family="Arial" font-weight="700">24/7</text>
+    <rect x="576" y="78" width="136" height="12" rx="6" fill="#CBD5E1"/>
+  </g>
+</svg>

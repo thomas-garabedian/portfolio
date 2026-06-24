@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 210" role="img" aria-label="IBM">
+<rect width="520" height="210" fill="none"/>
+<defs><clipPath id="t"><text x="50" y="150" font-size="150" font-family="Arial Black, Arial, sans-serif" font-weight="900">IBM</text></clipPath></defs>
+<g clip-path="url(#t)" fill="#1f70c1">
+<rect x="40" y="40" width="440" height="16"/><rect x="40" y="68" width="440" height="16"/><rect x="40" y="96" width="440" height="16"/><rect x="40" y="124" width="440" height="16"/><rect x="40" y="152" width="440" height="16"/>
+</g></svg>

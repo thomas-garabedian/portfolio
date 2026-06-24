@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="190" height="56" viewBox="0 0 190 56" role="img" aria-label="ENSTA Paris">
+<rect x="0.5" y="0.5" width="189" height="55" rx="13" fill="#FFFFFF" stroke="#D7DDE5"/>
+<rect x="10" y="10" width="36" height="36" rx="10" fill="#F3F5F8" stroke="#D7DDE5"/>
+<text x="28" y="34" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#17324D">EN</text>
+<text x="58" y="34" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#111827">ENSTA Paris</text>
+</svg>

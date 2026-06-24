@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr" data-lang="fr" data-theme="day">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Thomas Garabédian · Portfolio</title>
+  <meta name="description" content="Portfolio projets de Thomas Garabédian.">
+<script>
+    (function(){
+      var theme = localStorage.getItem('site-theme') || 'day';
+      document.documentElement.setAttribute('data-theme', theme === 'night' ? 'night' : 'day');
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .home-signature{padding:1.1rem 0 .75rem}
+    .signature-line{display:flex;align-items:center;justify-content:space-between;gap:1rem;border-bottom:1px solid var(--line);padding-bottom:.72rem}
+    .signature-line h1{font-size:clamp(1.45rem,3.5vw,2.45rem);line-height:1;margin:0;letter-spacing:-.06em}
+    .signature-meta{font-size:.82rem;color:var(--light);font-weight:800;text-transform:uppercase;letter-spacing:.1em;white-space:nowrap}
+    .work-landing{padding-top:.4rem}
+    .work-intro{display:flex;justify-content:space-between;align-items:end;gap:1rem;margin:0 0 .75rem}
+    .work-intro h2{margin:0;font-size:.88rem;text-transform:uppercase;letter-spacing:.13em;color:var(--light)}
+    .work-intro a{font-size:.86rem;font-weight:800;color:var(--muted)}
+    .work-mosaic{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+    .work-card{position:relative;min-height:390px;border-radius:22px;overflow:hidden;border:1px solid var(--line);background:#101923;display:flex;align-items:flex-end;color:#fff;text-decoration:none;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+    .work-card:hover{transform:translateY(-4px);box-shadow:0 20px 55px rgba(17,35,62,.15);border-color:#b9c7d8;color:#fff}
+    .work-card.small{min-height:300px}
+    .work-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,14,24,.03) 0%,rgba(8,14,24,.18) 38%,rgba(8,14,24,.88) 100%);z-index:1}
+    .work-card .media{position:absolute;inset:0;background:#f7fafc}
+    .work-card .media img{width:100%;height:100%;object-fit:cover;transition:transform .42s ease,filter .42s ease}
+    .work-card:hover .media img{transform:scale(1.035);filter:saturate(1.04)}
+    .work-card.logo-card .media{display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#ffffff 0%,#f3f6fa 100%);padding:3rem}
+    .work-card.logo-card .media img{object-fit:contain;max-width:66%;max-height:55%}
+    .work-card.logo-card::after{background:linear-gradient(180deg,rgba(8,14,24,0) 0%,rgba(8,14,24,.06) 45%,rgba(8,14,24,.78) 100%)}
+    .work-card .copy{position:relative;z-index:2;padding:1.15rem 1.2rem 1.2rem}
+    .work-kicker{display:flex;align-items:center;gap:.45rem;flex-wrap:wrap;margin-bottom:.6rem}
+    .work-card h3{font-size:clamp(1.28rem,2.1vw,1.75rem);letter-spacing:-.045em;line-height:1.05;margin:0;color:#fff}
+    .work-card p{margin:.55rem 0 0;color:rgba(255,255,255,.83);line-height:1.48;max-width:680px;font-size:.95rem}
+    .work-tags{display:flex;gap:.36rem;flex-wrap:wrap;margin-top:.78rem}
+    .work-tag{font-size:.72rem;font-weight:830;border:1px solid rgba(255,255,255,.23);background:rgba(255,255,255,.11);color:#fff;border-radius:999px;padding:.23rem .5rem}
+    .work-logos{display:flex;align-items:center;gap:.45rem;flex-wrap:wrap;margin-top:.78rem;min-height:30px}
+    .work-logos img{display:block;max-height:30px;max-width:96px;object-fit:contain;background:rgba(255,255,255,.93);border-radius:8px;padding:.18rem .34rem}
+    .next-profile{margin-top:1.15rem;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1rem;align-items:center;padding:1rem 1.1rem;border-radius:18px;background:#fff;border:1px solid var(--line)}
+    .next-profile p{margin:0;color:var(--muted);font-size:.95rem}
+    .next-profile strong{display:block;color:var(--ink);font-size:1rem;margin-bottom:.15rem}
+    @media(max-width:900px){.work-mosaic{grid-template-columns:1fr}.work-card,.work-card.small{min-height:330px}.signature-line{align-items:flex-start;flex-direction:column}.signature-meta{white-space:normal}.next-profile{grid-template-columns:1fr}}
+    @media(max-width:700px){.home-signature{padding:.85rem 0 .45rem}.work-card,.work-card.small{min-height:295px;border-radius:18px}.work-card .copy{padding:.95rem}.work-intro a{display:none}.signature-meta{font-size:.75rem}.work-card.logo-card .media{padding:2rem}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main"><span class="lang-fr inline">Aller au contenu</span><span class="lang-en inline">Skip to content</span></a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">TG</span><span>Thomas Garabédian</span></a>
+    <div class="nav-right">
+      <nav class="nav-links" aria-label="Navigation principale"><a href="index.html" aria-current="page"><span class="lang-fr inline">Accueil</span><span class="lang-en inline">Home</span></a><a href="profile.html"><span class="lang-fr inline">Profil</span><span class="lang-en inline">Profile</span></a><a href="projects.html"><span class="lang-fr inline">Projets</span><span class="lang-en inline">Projects</span></a><a href="contact.html">Contact</a></nav>
+      <div class="lang-switcher"><button class="lang-switch" type="button" data-lang-button="fr">FR</button><button class="lang-switch" type="button" data-lang-button="en">EN</button></div><div class="theme-switcher" aria-label="Thème"><button class="theme-switch" type="button" data-theme-button="day" title="Mode jour">☀︎</button><button class="theme-switch" type="button" data-theme-button="night" title="Mode nuit">☾</button></div>
+      <button class="nav-toggle" type="button" aria-expanded="false">Menu</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+  <div class="page">
+    <div class="container">
+      <section class="home-signature" aria-label="Signature">
+        <div class="signature-line">
+          <h1>Thomas Garabédian</h1>
+          <div class="signature-meta"><span class="lang-fr inline">Data science · Computer Vision · systèmes logiciels</span><span class="lang-en inline">Data science · Computer Vision · software systems</span></div>
+        </div>
+      </section>
+
+      <section class="section work-landing" id="work">
+        <div class="work-intro">
+          <h2><span class="lang-fr inline">Projets sélectionnés</span><span class="lang-en inline">Selected work</span></h2>
+          <a href="projects.html"><span class="lang-fr inline">Voir tous les projets →</span><span class="lang-en inline">View all projects →</span></a>
+        </div>
+        <div class="work-mosaic">
+          <a class="work-card" href="projects/haks-corrosion.html">
+            <div class="media"><img src="assets/img/haks-team-1.jpg" alt="HAKS Airbus x IBM"></div>
+            <div class="copy"><div class="work-kicker"><span class="type-pill type-hackathon">Hackathon</span><span class="award-badge static lang-fr">1er prix</span><span class="award-badge static lang-en">1st Prize</span><span class="award-badge static">2 500 €</span></div><h3>HAKS Airbus x IBM - 2 500 €</h3><p class="lang-fr block">Risque de corrosion aéronautique : feature engineering, calibration et restitution orientée maintenance.</p><p class="lang-en block">Aircraft corrosion risk: feature engineering, calibration and maintenance-oriented output.</p><div class="work-tags"><span class="work-tag">Brier Score 0.150</span><span class="work-tag">FT-Transformer</span><span class="work-tag">XGBoost</span></div><div class="work-logos"><img src="assets/img/logo-airbus-user.png" alt="Airbus"><img src="assets/img/logo-ibm-user.png" alt="IBM"><img src="assets/img/logo-bob-user.png" alt="Bob"></div></div>
+          </a>
+          <a class="work-card" href="projects/d4gen-annotation.html">
+            <div class="media"><img src="assets/img/d4gen-team-2.jpg" alt="D4GEN AWS x Genopole"></div>
+            <div class="copy"><div class="work-kicker"><span class="type-pill type-hackathon">Hackathon</span><span class="award-badge static lang-fr">1er prix</span><span class="award-badge static lang-en">1st Prize</span><span class="award-badge static">10 000 €</span></div><h3>D4GEN AWS x Genopole - 10 000 €</h3><p class="lang-fr block">Syrra : clusters bioacoustiques, embeddings et validation experte human-in-the-loop.</p><p class="lang-en block">Syrra: bioacoustic clusters, embeddings and human-in-the-loop expert validation.</p><div class="work-tags"><span class="work-tag">SAM-3</span><span class="work-tag">BirdNET-V3</span><span class="work-tag">UMAP/HDBSCAN</span></div><div class="work-logos"><img src="assets/img/logo-aws-user.png" alt="AWS"><img src="assets/img/logo-genopole-user.png" alt="Genopole"></div></div>
+          </a>
+          <a class="work-card small" href="projects/cieds-drones.html">
+            <div class="media"><img src="assets/img/cieds-drone-poster.jpg" alt="Automatisation d’un essaim de drones"></div>
+            <div class="copy"><div class="work-kicker"><span class="type-pill type-academic"><span class="lang-fr inline">Projet académique</span><span class="lang-en inline">Academic project</span></span></div><h3><span class="lang-fr inline">Automatisation d’un essaim de drones</span><span class="lang-en inline">Drone swarm automation</span></h3><p class="lang-fr block">Détection de cible, interprétation des données et coordination entre drones Tello/Tello EDU.</p><p class="lang-en block">Target detection, data interpretation and coordination between Tello/Tello EDU drones.</p><div class="work-tags"><span class="work-tag">Computer Vision</span><span class="work-tag">Tello EDU</span><span class="work-tag">Coordination</span></div><div class="work-logos"><img src="assets/img/logo-cieds-user.png" alt="CIEDS"><img src="assets/img/logo-aid-user.png" alt="AID"><img src="assets/img/logo-ensta-user.png" alt="ENSTA"></div></div>
+          </a>
+          <a class="work-card small logo-card" href="experiences/alseamar.html">
+            <div class="media"><img src="assets/img/logo-alseamar-user.png" alt="ALSEAMAR"></div>
+            <div class="copy"><div class="work-kicker"><span class="type-pill type-academic"><span class="lang-fr inline">Stage ingénieur</span><span class="lang-en inline">Engineering internship</span></span></div><h3>ALSEAMAR</h3><p class="lang-fr block">Développement Python, automatisation d’instruments et essais RF avec prise en main de NI-VISA.</p><p class="lang-en block">Python development, instrument automation and RF testing with NI-VISA.</p><div class="work-tags"><span class="work-tag">Python</span><span class="work-tag">NI-VISA</span><span class="work-tag">RF</span></div></div>
+          </a>
+        </div>
+        <a class="next-profile" href="profile.html"><div><strong><span class="lang-fr inline">Profil complet</span><span class="lang-en inline">Full profile</span></strong><p class="lang-fr block">Formation, CV, engagements, expériences et certifications.</p><p class="lang-en block">Education, resumes, commitments, experience and certifications.</p></div><span class="arrow">→</span></a>
+      </section>
+    </div>
+  </div>
+</main>
+<footer class="footer"><div class="container footer-wrap"><span>© <span data-year></span> Thomas Garabédian</span><div class="footer-links"><a href="mailto:thomas.garabedian@telecom-sudparis.eu">Email</a><a href="https://www.linkedin.com/in/thomas-garab%C3%A9dian/">LinkedIn</a></div></div></footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

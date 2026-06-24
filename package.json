@@ -1,0 +1,10 @@
+{
+  "name": "thomas-garabedian-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static portfolio website for Thomas Garabedian.",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "serve": "python3 -m http.server 8080"
+  }
+}
