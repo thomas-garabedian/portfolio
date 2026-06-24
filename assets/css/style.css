@@ -208,6 +208,10 @@ body{font-size:15.75px}
 .sub-row{padding:1.08rem 0}
 .detail-main{padding:1.2rem}
 .image-lightbox img{border-radius:8px}
+.localized-button.lang-fr,
+.localized-button.lang-en{display:none}
+html[data-lang="fr"] .localized-button.lang-fr,
+html[data-lang="en"] .localized-button.lang-en{display:inline-flex!important}
 @media(max-width:700px){
   .page{padding:2rem 0 3.8rem}
   .work-card,.work-card.small,.project-card,.project-card.small,.project-card.feature{min-height:286px;border-radius:8px}

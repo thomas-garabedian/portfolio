@@ -28,9 +28,6 @@ function setLang(lang){
     btn.classList.toggle('active', active);
     btn.setAttribute('aria-pressed', active ? 'true' : 'false');
   });
-  document.querySelectorAll('[data-href-fr][data-href-en]').forEach(link => {
-    link.href = link.dataset[value === 'en' ? 'hrefEn' : 'hrefFr'];
-  });
   localStorage.setItem('site-lang', value);
 }
 setLang(saved || 'fr');
