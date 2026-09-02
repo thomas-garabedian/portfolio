@@ -1,9 +1,6 @@
 
 const html = document.documentElement;
-function isDirectHomeEntry() {
-  const path = window.location.pathname;
-  const isHome = path.endsWith('/') || path.endsWith('/index.html');
-  if (!isHome) return false;
+function isExternalEntry() {
   if (!document.referrer) return true;
   try {
     const referrer = new URL(document.referrer);
@@ -13,9 +10,9 @@ function isDirectHomeEntry() {
   }
 }
 
-const forceDefaultLanding = isDirectHomeEntry();
-if (forceDefaultLanding) {
-  localStorage.setItem('site-lang', 'fr');
+const forceDefaultLanguage = isExternalEntry();
+if (forceDefaultLanguage) {
+  localStorage.setItem('site-lang', 'en');
 }
 
 const saved = localStorage.getItem('site-lang');
@@ -30,7 +27,7 @@ function setLang(lang){
   });
   localStorage.setItem('site-lang', value);
 }
-setLang(saved || 'fr');
+setLang(saved || 'en');
 document.querySelectorAll('[data-lang-button]').forEach(btn => btn.addEventListener('click', () => setLang(btn.dataset.langButton)));
 
 const nav = document.querySelector('.nav-links');
